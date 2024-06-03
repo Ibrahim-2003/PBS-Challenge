@@ -1,0 +1,773 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!29 &1
+OcclusionCullingSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_OcclusionBakeSettings:
+    smallestOccluder: 5
+    smallestHole: 0.25
+    backfaceThreshold: 100
+  m_SceneGUID: 00000000000000000000000000000000
+  m_OcclusionCullingData: {fileID: 0}
+--- !u!104 &2
+RenderSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 9
+  m_Fog: 0
+  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_FogMode: 3
+  m_FogDensity: 0.01
+  m_LinearFogStart: 0
+  m_LinearFogEnd: 300
+  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
+  m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
+  m_AmbientIntensity: 1
+  m_AmbientMode: 3
+  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
+  m_SkyboxMaterial: {fileID: 0}
+  m_HaloStrength: 0.5
+  m_FlareStrength: 1
+  m_FlareFadeSpeed: 3
+  m_HaloTexture: {fileID: 0}
+  m_SpotCookie: {fileID: 10001, guid: 0000000000000000e000000000000000, type: 0}
+  m_DefaultReflectionMode: 0
+  m_DefaultReflectionResolution: 128
+  m_ReflectionBounces: 1
+  m_ReflectionIntensity: 1
+  m_CustomReflection: {fileID: 0}
+  m_Sun: {fileID: 0}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_UseRadianceAmbientProbe: 0
+--- !u!157 &3
+LightmapSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 11
+  m_GIWorkflowMode: 1
+  m_GISettings:
+    serializedVersion: 2
+    m_BounceScale: 1
+    m_IndirectOutputScale: 1
+    m_AlbedoBoost: 1
+    m_EnvironmentLightingMode: 0
+    m_EnableBakedLightmaps: 0
+    m_EnableRealtimeLightmaps: 0
+  m_LightmapEditorSettings:
+    serializedVersion: 12
+    m_Resolution: 2
+    m_BakeResolution: 40
+    m_AtlasSize: 1024
+    m_AO: 0
+    m_AOMaxDistance: 1
+    m_CompAOExponent: 1
+    m_CompAOExponentDirect: 0
+    m_ExtractAmbientOcclusion: 0
+    m_Padding: 2
+    m_LightmapParameters: {fileID: 0}
+    m_LightmapsBakeMode: 1
+    m_TextureCompression: 1
+    m_FinalGather: 0
+    m_FinalGatherFiltering: 1
+    m_FinalGatherRayCount: 256
+    m_ReflectionCompression: 2
+    m_MixedBakeMode: 2
+    m_BakeBackend: 0
+    m_PVRSampling: 1
+    m_PVRDirectSampleCount: 32
+    m_PVRSampleCount: 500
+    m_PVRBounces: 2
+    m_PVREnvironmentSampleCount: 500
+    m_PVREnvironmentReferencePointCount: 2048
+    m_PVRFilteringMode: 2
+    m_PVRDenoiserTypeDirect: 0
+    m_PVRDenoiserTypeIndirect: 0
+    m_PVRDenoiserTypeAO: 0
+    m_PVRFilterTypeDirect: 0
+    m_PVRFilterTypeIndirect: 0
+    m_PVRFilterTypeAO: 0
+    m_PVREnvironmentMIS: 0
+    m_PVRCulling: 1
+    m_PVRFilteringGaussRadiusDirect: 1
+    m_PVRFilteringGaussRadiusIndirect: 5
+    m_PVRFilteringGaussRadiusAO: 2
+    m_PVRFilteringAtrousPositionSigmaDirect: 0.5
+    m_PVRFilteringAtrousPositionSigmaIndirect: 2
+    m_PVRFilteringAtrousPositionSigmaAO: 1
+    m_ExportTrainingData: 0
+    m_TrainingDataDestination: TrainingData
+    m_LightProbeSampleCountMultiplier: 4
+  m_LightingDataAsset: {fileID: 0}
+  m_UseShadowmask: 1
+--- !u!196 &4
+NavMeshSettings:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_BuildSettings:
+    serializedVersion: 2
+    agentTypeID: 0
+    agentRadius: 0.5
+    agentHeight: 2
+    agentSlope: 45
+    agentClimb: 0.4
+    ledgeDropHeight: 0
+    maxJumpAcrossDistance: 0
+    minRegionArea: 2
+    manualCellSize: 0
+    cellSize: 0.16666667
+    manualTileSize: 0
+    tileSize: 256
+    accuratePlacement: 0
+    debug:
+      m_Flags: 0
+  m_NavMeshData: {fileID: 0}
+--- !u!1 &499385142
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 499385144}
+  - component: {fileID: 499385143}
+  m_Layer: 0
+  m_Name: DataController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &499385143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 499385142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 607943a2d8c410c489330e19622657fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  allRoundData:
+  - name: Round 0
+    timeLimitInSeconds: 30
+    pointsAddedForCorrectAnswer: 10
+    questionCount: 10
+    questions:
+    - questionText: What is the longest river you cross when flying from Bangkok
+        to Manila?
+      answers:
+      - answerText: Yellow River
+        isCorrect: 0
+      - answerText: Mekong River
+        isCorrect: 1
+      - answerText: Srepok River
+        isCorrect: 0
+      - answerText: Tonle Sekong River
+        isCorrect: 0
+    - questionText: This is about what battle... "Toward the end of 1944, Hitler
+        tried the ultimate grand slam with the panzer drive through the Ardennes
+        and Luxembourg"?
+      answers:
+      - answerText: The Battle of the Bulge
+        isCorrect: 1
+      - answerText: The Battle of Crete
+        isCorrect: 0
+      - answerText: The Battle of Anzio
+        isCorrect: 0
+      - answerText: The Battle of Monte Cassino
+        isCorrect: 0
+    - questionText: What is the origin of macrame?
+      answers:
+      - answerText: Greek
+        isCorrect: 0
+      - answerText: French
+        isCorrect: 0
+      - answerText: Italian
+        isCorrect: 0
+      - answerText: Sailor's Knots
+        isCorrect: 1
+    - questionText: The quantity of moisture that can be held by the air has a definite
+        limit called the what point?
+      answers:
+      - answerText: Dew Point
+        isCorrect: 0
+      - answerText: Humidity Point
+        isCorrect: 0
+      - answerText: Condensation Point
+        isCorrect: 0
+      - answerText: Saturation Point
+        isCorrect: 1
+    - questionText: Finish this stanza from a poem by Katharine Lee Bates... "Oh
+        beautiful for patriot dreams that see beyond the years lie now a bastard
+        city's gleam undimmed by..."?
+      answers:
+      - answerText: Human Tears
+        isCorrect: 1
+      - answerText: Years and Years
+        isCorrect: 0
+      - answerText: Mutineers
+        isCorrect: 0
+      - answerText: Cheers
+        isCorrect: 0
+    - questionText: These were literary works from what ancient civilization... Teaching
+        for King Merykara, The Contendings of Horus and Seth...?
+      answers:
+      - answerText: Rome
+        isCorrect: 0
+      - answerText: Egypt
+        isCorrect: 1
+      - answerText: Persia
+        isCorrect: 0
+      - answerText: Greece
+        isCorrect: 0
+    - questionText: In 1898 Theodore Roosevelt expressed the view that the battleship
+        Maine was sunk by...?
+      answers:
+      - answerText: Germany
+        isCorrect: 0
+      - answerText: Japan
+        isCorrect: 0
+      - answerText: Spain
+        isCorrect: 1
+      - answerText: Iran
+        isCorrect: 0
+    - questionText: Identify the speaker, historical or fictional, of this war quotation...
+        "The great questions of the day will be decided by iron and blood".
+      answers:
+      - answerText: Andrew Jackson
+        isCorrect: 0
+      - answerText: Davy Crockett
+        isCorrect: 0
+      - answerText: Otto Von Bismarck
+        isCorrect: 1
+      - answerText: Winston Chruchill
+        isCorrect: 0
+    - questionText: What is the term of a judge or jury against or in favor of one
+        of the parties in favor of a legal action?
+      answers:
+      - answerText: Bias
+        isCorrect: 1
+      - answerText: Conspiracy
+        isCorrect: 0
+      - answerText: Bribery
+        isCorrect: 0
+      - answerText: Loyalty
+        isCorrect: 0
+    - questionText: Referendums and initiatives are examples of what kind of democracy
+        in which decisions rest expressly on the voice of the people?
+      answers:
+      - answerText: Free Democracy
+        isCorrect: 0
+      - answerText: Republican Democracy
+        isCorrect: 0
+      - answerText: Socialist Democracy
+        isCorrect: 0
+      - answerText: Direct Democracy
+        isCorrect: 1
+    - questionText: Name the company that was the richest of any kind in the world
+        in 1882 that controlled oil pipelines?
+      answers:
+      - answerText: Standard Oil
+        isCorrect: 1
+      - answerText: Citgo
+        isCorrect: 0
+      - answerText: Exxon
+        isCorrect: 0
+      - answerText: Shell
+        isCorrect: 0
+    - questionText: Considering alphabetical order, what is the last letter of the
+        alphabet used in naming the four main blood types?
+      answers:
+      - answerText: O
+        isCorrect: 1
+      - answerText: B
+        isCorrect: 0
+      - answerText: A
+        isCorrect: 0
+      - answerText: AB
+        isCorrect: 0
+    - questionText: What is the term for the period of time an animal is pregnant
+        or for the length of time from fertilization until birth?
+      answers:
+      - answerText: Pregnancy Period
+        isCorrect: 0
+      - answerText: Pregnancy Interval
+        isCorrect: 0
+      - answerText: Gestation Period
+        isCorrect: 1
+      - answerText: Birth Period
+        isCorrect: 0
+    - questionText: Common Sense, a pamphlet written by Thomas Pain supported what
+        cause of the American people?
+      answers:
+      - answerText: American Revolution
+        isCorrect: 0
+      - answerText: Boston Tea Party
+        isCorrect: 0
+      - answerText: Civil Liberties
+        isCorrect: 0
+      - answerText: Independence
+        isCorrect: 1
+    - questionText: What is the term for a column of mud, ice, or rock removed from
+        the Earth by drilling?
+      answers:
+      - answerText: Column
+        isCorrect: 0
+      - answerText: Specimen
+        isCorrect: 0
+      - answerText: Core
+        isCorrect: 1
+      - answerText: Sample
+        isCorrect: 0
+    - questionText: Mineral-rich sand and oil that can be profitably exported is
+        known to miners as what kind of dirt?
+      answers:
+      - answerText: Pay Dirt
+        isCorrect: 1
+      - answerText: Rich Dirt
+        isCorrect: 0
+      - answerText: Gold Dirt
+        isCorrect: 0
+      - answerText: Black Gold
+        isCorrect: 0
+    - questionText: What is the term for the major administrative units in the federal
+        government responsible for such broad functions as health, agriculture, and
+        defense?
+      answers:
+      - answerText: Cabinet
+        isCorrect: 0
+      - answerText: Department
+        isCorrect: 1
+      - answerText: Committe
+        isCorrect: 0
+      - answerText: Advisors
+        isCorrect: 0
+    - questionText: In World War II, Hirohito had what title?
+      answers:
+      - answerText: President
+        isCorrect: 0
+      - answerText: Divine Emperor
+        isCorrect: 1
+      - answerText: Supreme Leader
+        isCorrect: 0
+      - answerText: Ruler
+        isCorrect: 0
+    - questionText: Spell the astronomical term...
+      answers:
+      - answerText: Zodiakle
+        isCorrect: 0
+      - answerText: Zodyackle
+        isCorrect: 0
+      - answerText: Zodiacle
+        isCorrect: 0
+      - answerText: Zodiacal
+        isCorrect: 1
+    - questionText: Charles Lindberg traveled from which city to which city in the
+        first transatlantic solo?
+      answers:
+      - answerText: New York to London
+        isCorrect: 0
+      - answerText: New York to Paris
+        isCorrect: 1
+      - answerText: New York to Germany
+        isCorrect: 0
+      - answerText: Los Angeles to Tokyo
+        isCorrect: 0
+    - questionText: The Arabs trace their ancestry to Abraham's oldest son...?
+      answers:
+      - answerText: Isaac
+        isCorrect: 0
+      - answerText: Seth
+        isCorrect: 0
+      - answerText: Ishmael
+        isCorrect: 1
+      - answerText: Midian
+        isCorrect: 0
+    - questionText: In 1944, what secret police arrested Otto Frank and his family?
+      answers:
+      - answerText: Gestapo
+        isCorrect: 1
+      - answerText: Vigilantes
+        isCorrect: 0
+      - answerText: SWAT
+        isCorrect: 0
+      - answerText: FBI
+        isCorrect: 0
+    - questionText: What kind of architectural structure forms the monuments honoring
+        the Emperor Trajan in Rome and Horatio Nelson in London?
+      answers:
+      - answerText: Classical
+        isCorrect: 0
+      - answerText: Dome
+        isCorrect: 0
+      - answerText: Arch
+        isCorrect: 0
+      - answerText: Column
+        isCorrect: 1
+    - questionText: The Peace of Westphalia, a series of treaties ending the 30 Years
+        War was named for a region in what country?
+      answers:
+      - answerText: Netherlands
+        isCorrect: 0
+      - answerText: France
+        isCorrect: 0
+      - answerText: Germany
+        isCorrect: 1
+      - answerText: Prussia
+        isCorrect: 0
+    - questionText: In base 10, the digital root of any non-zero triangular number
+        is 1,3, 6, or what?
+      answers:
+      - answerText: 2
+        isCorrect: 0
+      - answerText: 9
+        isCorrect: 1
+      - answerText: 10
+        isCorrect: 0
+      - answerText: 8
+        isCorrect: 0
+    - questionText: What term is almost synonymous with gerrymandering but does not
+        carry the connotation of partisan political shenanigans?
+      answers:
+      - answerText: Re-districting
+        isCorrect: 1
+      - answerText: Districting
+        isCorrect: 0
+      - answerText: Gerrymandering
+        isCorrect: 0
+      - answerText: Border-Drawing
+        isCorrect: 0
+    - questionText: Quartz sand is a primary raw material for commercial glass production
+        because it consists of what crystalline compound?
+      answers:
+      - answerText: Phosphorus
+        isCorrect: 0
+      - answerText: Silicon
+        isCorrect: 1
+      - answerText: Carbon
+        isCorrect: 0
+      - answerText: Glass
+        isCorrect: 0
+    - questionText: 'What method for acquiring land for a family farm plays a part
+        in these works: Wilder''s Little House on the Prairie, Michener''s Centennial,
+        Cather''s My Antonia, Schaefer''s Shame?'
+      answers:
+      - answerText: Sharecropping
+        isCorrect: 0
+      - answerText: Loaning
+        isCorrect: 0
+      - answerText: Homesteading
+        isCorrect: 1
+      - answerText: Trading
+        isCorrect: 0
+    - questionText: What was the nationality of the original Acadians, the colonists
+        of Canada's maritime provinces who were deported to Louisiana in the 18th
+        century?
+      answers:
+      - answerText: English
+        isCorrect: 0
+      - answerText: French
+        isCorrect: 1
+      - answerText: Natives
+        isCorrect: 0
+      - answerText: Americans
+        isCorrect: 0
+    - questionText: Who was the U.S. Secretary of State during most of Alexander
+        Hamilton's time as Secretary of the Treasury?
+      answers:
+      - answerText: George Washington
+        isCorrect: 0
+      - answerText: Aaron Burr
+        isCorrect: 0
+      - answerText: Thomas Jefferson
+        isCorrect: 1
+      - answerText: Benjamin Franklin
+        isCorrect: 0
+    - questionText: Classify the sentence that is the preamble of the U.S. Constitution
+        according to its structure.
+      answers:
+      - answerText: Simple
+        isCorrect: 1
+      - answerText: Runon
+        isCorrect: 0
+      - answerText: Complex
+        isCorrect: 0
+      - answerText: Compound
+        isCorrect: 0
+    - questionText: What gas law states that at constant pressure, the volume of
+        a gas sample is directly proportional to its absolute temperature?
+      answers:
+      - answerText: Avogadro's Law
+        isCorrect: 0
+      - answerText: Charles' Law
+        isCorrect: 1
+      - answerText: Boyle's Law
+        isCorrect: 0
+      - answerText: Dalton's Law
+        isCorrect: 0
+    - questionText: It is estimated that some 13,000 Union prisoners perished while
+        being held in what Georgia prison during the Civil War?
+      answers:
+      - answerText: Andersonville
+        isCorrect: 1
+      - answerText: Atlanta
+        isCorrect: 0
+      - answerText: Savanna
+        isCorrect: 0
+      - answerText: Fulton County
+        isCorrect: 0
+    - questionText: A dormant volcano in the cascade range first sighted by George
+        Vancouver in 1792 forms the heart of what national park?
+      answers:
+      - answerText: Yosemite
+        isCorrect: 0
+      - answerText: Big Bend
+        isCorrect: 0
+      - answerText: Mount Rainier
+        isCorrect: 1
+      - answerText: Yellowstone
+        isCorrect: 0
+    - questionText: How do you spell...?
+      answers:
+      - answerText: Daminable
+        isCorrect: 0
+      - answerText: Damnable
+        isCorrect: 1
+      - answerText: Damnible
+        isCorrect: 0
+      - answerText: Damnibel
+        isCorrect: 0
+    - questionText: The answer beings with pro-. The goal of classical communism
+        was the dictatorship of the...
+      answers:
+      - answerText: Proletariate
+        isCorrect: 1
+      - answerText: Prospectors
+        isCorrect: 0
+      - answerText: Proponents
+        isCorrect: 0
+      - answerText: Protectorate
+        isCorrect: 0
+    - questionText: Land grants to what kinds of companies in the U.S. during the
+        1850s and 1860s covered more territory than France, England, Wales, and Scotland
+        combined?
+      answers:
+      - answerText: Construction
+        isCorrect: 0
+      - answerText: Manufacturing
+        isCorrect: 0
+      - answerText: Railroads
+        isCorrect: 1
+      - answerText: Airports
+        isCorrect: 0
+    - questionText: What is the collective name for the extremely poisonous substances
+        that contain the monovalent compound CN?
+      answers:
+      - answerText: Cyanide
+        isCorrect: 1
+      - answerText: Cinnamon
+        isCorrect: 0
+      - answerText: Venom
+        isCorrect: 0
+      - answerText: Carbon Monoxide
+        isCorrect: 0
+    - questionText: What coastal zone is subject to alternating periods of flooding
+        and drying?
+      answers:
+      - answerText: Intertidal zone
+        isCorrect: 1
+      - answerText: Shore
+        isCorrect: 0
+      - answerText: Shelf
+        isCorrect: 0
+      - answerText: Bay
+        isCorrect: 0
+    - questionText: Solve for x. 4 is to 9 as 20 is to x.
+      answers:
+      - answerText: 54
+        isCorrect: 0
+      - answerText: 100
+        isCorrect: 0
+      - answerText: 50
+        isCorrect: 0
+      - answerText: 45
+        isCorrect: 1
+    - questionText: Give the typical ionic charge or number for this ion - silver.
+      answers:
+      - answerText: +2
+        isCorrect: 0
+      - answerText: +1
+        isCorrect: 1
+      - answerText: +3
+        isCorrect: 0
+      - answerText: -1
+        isCorrect: 0
+    - questionText: Finish the sentence. Punishment prohibited by the 8th amendment
+        is described as being cruel and ______.
+      answers:
+      - answerText: Painful
+        isCorrect: 0
+      - answerText: Unusual
+        isCorrect: 1
+      - answerText: Unjust
+        isCorrect: 0
+      - answerText: Prohibited
+        isCorrect: 0
+    - questionText: Which organ of the United Nations has the authority to commit
+        the Blue Berrets to peacekeeping operations?
+      answers:
+      - answerText: Secretariat
+        isCorrect: 0
+      - answerText: Security Council
+        isCorrect: 1
+      - answerText: General Assembly
+        isCorrect: 0
+      - answerText: International Court of Justice
+        isCorrect: 0
+    - questionText: A fairy ring may be seen growing on lawns. Once it was believed
+        to be caused by a ring of dancing fairies. What type of plant life marks
+        the..?
+      answers:
+      - answerText: Grass
+        isCorrect: 0
+      - answerText: Weeds
+        isCorrect: 0
+      - answerText: Mushroom
+        isCorrect: 1
+      - answerText: Flower
+        isCorrect: 0
+    - questionText: Name any of the three modal verbs that begin with the letter
+        M.
+      answers:
+      - answerText: Mill
+        isCorrect: 0
+      - answerText: Mount
+        isCorrect: 0
+      - answerText: Modify
+        isCorrect: 0
+      - answerText: Might
+        isCorrect: 1
+    - questionText: What is another name for the gravitational force that acts like
+        a cable between the Moon and Earth to keep the Moon in its orbit?
+      answers:
+      - answerText: Tethering Force
+        isCorrect: 0
+      - answerText: Gravitational Pull
+        isCorrect: 0
+      - answerText: Centripetal Force
+        isCorrect: 1
+      - answerText: Centrifugal Force
+        isCorrect: 0
+    - questionText: What Rocky Mountain state contains the national elk refuge, the
+        winter home of a large elk herd?
+      answers:
+      - answerText: Utah
+        isCorrect: 0
+      - answerText: Wyoming
+        isCorrect: 1
+      - answerText: Colorado
+        isCorrect: 0
+      - answerText: Montana
+        isCorrect: 0
+    - questionText: The area of a regular polygon equals one-half the product of
+        the apothem times the what?
+      answers:
+      - answerText: Length
+        isCorrect: 0
+      - answerText: Perimeter
+        isCorrect: 1
+      - answerText: Base
+        isCorrect: 0
+      - answerText: Height
+        isCorrect: 0
+    - questionText: Name two of the three universities that combine their resources
+        to form the North Carolina research triangle.
+      answers:
+      - answerText: Greensboro and UNC Chapel Hill
+        isCorrect: 0
+      - answerText: UNC and Appalachian State University
+        isCorrect: 0
+      - answerText: Duke and UNC Chapel Hill
+        isCorrect: 1
+      - answerText: Greensboro and Duke
+        isCorrect: 0
+    - questionText: Which of the world's great plates is bounded by the North American
+        Plate and South American Plate to its west, by the Arabian Plate on its northeast,
+        by the Indo-Austrailian Plate on its...?
+      answers:
+      - answerText: Eurasian plate
+        isCorrect: 0
+      - answerText: Pacific Plate
+        isCorrect: 0
+      - answerText: Antarctic Plate
+        isCorrect: 0
+      - answerText: African Plate
+        isCorrect: 1
+    boydQuest:
+    - {fileID: 8300000, guid: 0d0440c0ea3b8ae4db5b7867155dec72, type: 3}
+    - {fileID: 8300000, guid: a16c4a668bc5b654a9ff2bca4b18663a, type: 3}
+    - {fileID: 8300000, guid: faf1580e82702ef4fa98712a9e3f757b, type: 3}
+    - {fileID: 8300000, guid: 0c2a321a6434d9b44915e9a6d48465aa, type: 3}
+    - {fileID: 8300000, guid: 0563a84087efe9749b16a9b8af0416db, type: 3}
+    - {fileID: 8300000, guid: 0a661b70c86a59f4daa0e9b3d7df7127, type: 3}
+    - {fileID: 8300000, guid: 29c2bcdce3835074f913bc642253bc4c, type: 3}
+    - {fileID: 8300000, guid: 3254330610127454c9472ad4a71ef81b, type: 3}
+    - {fileID: 8300000, guid: 2a3ae24067120da4380408904e2b3898, type: 3}
+    - {fileID: 8300000, guid: 487bc15a855623549ab9470f7c12e6ed, type: 3}
+    - {fileID: 8300000, guid: 3f8f1080d55252248ad0bb3d56e9adb4, type: 3}
+    - {fileID: 8300000, guid: 667c55a7ba66c3b418ba48ec5c2e0ed2, type: 3}
+    - {fileID: 8300000, guid: 5a651c9fca464e94c95894676338baba, type: 3}
+    - {fileID: 8300000, guid: 5a165f3b91294eb44b9cc6768822e6a7, type: 3}
+    - {fileID: 8300000, guid: bb9ef50fe7c472540b0a418a3238ed74, type: 3}
+    - {fileID: 8300000, guid: 20f07b0c4502da549b550988f24eb78c, type: 3}
+    - {fileID: 8300000, guid: 84bae093a740eb2449a6f17fd5fcd090, type: 3}
+    - {fileID: 8300000, guid: 24557ffacbfac4f4a98df0fc3cfd8536, type: 3}
+    - {fileID: 8300000, guid: c5e7e960dfc49d74382cb2d854886752, type: 3}
+    - {fileID: 8300000, guid: 6a0c534223a55084aa9f0e0fc242b760, type: 3}
+    - {fileID: 8300000, guid: df742193e4a321b4d88ab3fa2ea8c00b, type: 3}
+    - {fileID: 8300000, guid: b039be90f79354f44aee72622c588588, type: 3}
+    - {fileID: 8300000, guid: 5c6c64311c29dcb4f9ea62fe0f3fad5b, type: 3}
+    - {fileID: 8300000, guid: a8d60927b29e5254f8623c55c657289d, type: 3}
+    - {fileID: 8300000, guid: 6fcbbac7606984047a6ad8362482df3d, type: 3}
+    - {fileID: 8300000, guid: 3be80f066a730e244aa3d0def9d9b1f9, type: 3}
+    - {fileID: 8300000, guid: c08fb25d036531744b602dd1aeb61b5b, type: 3}
+    - {fileID: 8300000, guid: 6c6cb2379399d5245b78ef74b53f00c6, type: 3}
+    - {fileID: 8300000, guid: 34570688cbed7044e9e2591dff06a5e6, type: 3}
+    - {fileID: 8300000, guid: 9d956bb7905797b4685d523b18cd6388, type: 3}
+    - {fileID: 8300000, guid: 8f22d3b931258db40b810cdf1c181ca5, type: 3}
+    - {fileID: 8300000, guid: 348f367a21a088142b7f8bfb6ecbb4ed, type: 3}
+    - {fileID: 8300000, guid: f89e1e75c7ebc624da25b8e1e80f3bf7, type: 3}
+    - {fileID: 8300000, guid: 25214dc032637bf4c9a50f37b04e61b5, type: 3}
+    - {fileID: 8300000, guid: f47c814bbe2797f4fae70564d5b1ecbc, type: 3}
+    - {fileID: 8300000, guid: 26e5673cee073574eb8188d29e65980a, type: 3}
+    - {fileID: 8300000, guid: 58212a67a2b76304c93e706771cb729c, type: 3}
+    - {fileID: 8300000, guid: 26a4f20be6f6c134ba47fab4715d6114, type: 3}
+    - {fileID: 8300000, guid: 2e63661db7f89aa49a533d08fe8bcf98, type: 3}
+    - {fileID: 8300000, guid: 45a3cbf0af041fc40ad5691b53bfb73b, type: 3}
+    - {fileID: 8300000, guid: 57fed76210a59314ea51a92afc5a4c19, type: 3}
+    - {fileID: 8300000, guid: bbdea476844e5da4489c46564bb17f52, type: 3}
+    - {fileID: 8300000, guid: 8b59e64d35b2c4c4387aa2fe53a127e1, type: 3}
+    - {fileID: 8300000, guid: 92884f534099ae44e92255c7f1925ed6, type: 3}
+    - {fileID: 8300000, guid: 551d717ce5023124396632fe2cc61654, type: 3}
+    - {fileID: 8300000, guid: 67d03931186ee92418f5e0551ce446fd, type: 3}
+    - {fileID: 8300000, guid: c518210831d46f64898a46379272262e, type: 3}
+    - {fileID: 8300000, guid: 47e7b60ff34ee914a989b2e9aea9025a, type: 3}
+    - {fileID: 8300000, guid: 0b9e1e6904193b84d9b071e1efa4fd23, type: 3}
+    - {fileID: 8300000, guid: c15fb1e41421bcf40b45cf8f5af2b2a0, type: 3}
+--- !u!4 &499385144
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 499385142}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.15890707, y: 0.21981864, z: -0.32361084}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
